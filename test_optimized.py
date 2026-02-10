@@ -10,7 +10,14 @@ import time
 
 # Test data creation
 def create_test_data(n_samples=100):
-    """Create synthetic test data"""
+    """Create synthetic test data
+    
+    Args:
+        n_samples: Number of samples to generate (default 100)
+        
+    Note: This creates a balanced 50/50 split for basic validation.
+    For production testing, use real data with natural class imbalance.
+    """
     np.random.seed(42)
     
     # Sample texts (mix of risk and non-risk phrases)

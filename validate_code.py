@@ -98,7 +98,10 @@ def main():
     print("CODE VALIDATION TEST (NO EXECUTION)")
     print("="*70)
     
-    filepath = '/home/runner/work/anonimitzar/anonimitzar/optimized_suicide_detection.py'
+    # Use relative path for portability
+    import os
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    filepath = os.path.join(script_dir, 'optimized_suicide_detection.py')
     
     results = []
     
